@@ -1,0 +1,7 @@
+127.0.0.1 - - [27/Apr/2025:10:10:10 -0600] "GET /index.html HTTP/1.1" 200 1043 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/90.0.4430.93 Safari/537.36"
+127.0.0.1 - - [27/Apr/2025:10:11:10 -0600] "GET /about.html HTTP/1.1" 200 2048 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Safari/537.36"
+127.0.0.1 - - [27/Apr/2025:10:12:10 -0600] "GET /contact.html HTTP/1.1" 200 3048 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:89.0) Gecko/20100101 Firefox/89.0"
+127.0.0.1 - - [27/Apr/2025:10:13:10 -0600] "GET /services.html HTTP/1.1" 200 1500 "-" "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) Safari/604.1"
+127.0.0.1 - - [27/Apr/2025:10:14:10 -0600] "GET /products.html HTTP/1.1" 200 1750 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/90.0.4430.93 Safari/537.36"
+127.0.0.1 - - [27/Apr/2025:10:15:10 -0600] "GET /faq.html HTTP/1.1" 200 1250 "-" "Mozilla/5.0 (Linux; Android 9; SM-G960F) Chrome/86.0.4240.198 Mobile Safari/537.36"
+127.0.0.1 - - [27/Apr/2025:10:16:10 -0600] "GET /login.html HTTP/1.1" 200 1350 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:78.0) Gecko/20100101 Firefox/78.0"
