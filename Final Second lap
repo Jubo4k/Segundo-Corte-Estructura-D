@@ -1,0 +1,44 @@
+import re
+from collections import Counter
+
+# Leer el archivo
+with open(r'C:\Users\julia\OneDrive\Escritorio\Python\3 Corte\access.log', 'r') as file:
+    log = file.readlines()
+
+# Expresión regular para extraer el User-Agent
+regexExpresion = re.compile(r'"([^"]+)"$')
+
+# Lista para almacenar los navegadores encontrados
+navegadores = []
+
+# Función para identificar navegador
+def identify_browser(regexExpresion):
+    if 'Chrome' in regexExpresion and 'Safari' in regexExpresion and 'Edg' not in regexExpresion:
+        return 'Chrome'
+    elif 'Firefox' in regexExpresion:
+        return 'Firefox'
+    elif 'Safari' in regexExpresion and 'Chrome' not in regexExpresion:
+        return 'Safari'
+    else:
+        return 'Otro'
+
+# Procesar cada línea
+for line in log:
+    match = regexExpresion.search(line)
+    if match:
+        regexExpresio = match.group(1)
+        browser = identify_browser(regexExpresio)
+        navegadores.append(browser)
+
+# Contar navegadores
+numero_navegadores = Counter(navegadores)
+
+# Mostrar resultados
+print("\nResultados:")
+print("-" * 40)
+for browser, count in numero_navegadores.items():
+    print(f"Navegador: {browser}")
+    print(f"Cantidad de veces registrado: {count}")
+    print("-" * 40)
+
+print(f"Total de diferentes navegadores encontrados: {len(numero_navegadores)}")
